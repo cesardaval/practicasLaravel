@@ -12,7 +12,7 @@
     @method('put')
 <label for="">
     Nombre: 
-<input type="text" name="name" id="" placeholder="Nombre" value="{{old("namr",$curso->name)}}">
+<input type="text" name="name" id="" placeholder="Nombre" value="{{old("name",$curso->name)}}">
 </label><br>
 @error('name')
     <br>
