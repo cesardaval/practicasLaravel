@@ -10,7 +10,9 @@
 
 <ul>
     @foreach($cursos as $curso)
-    <li><a href="{{route('cursos.show',$curso->id)}}">{{$curso->name}}</a></li>    
+    <li><a href="{{route('cursos.show',$curso)}}">{{$curso->name}}</a></li>    
+    <br>
+    {{ route('cursos.show',$curso) }}
     @endforeach
 </ul>
 {{$cursos->links()}}
