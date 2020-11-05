@@ -5,6 +5,9 @@
 
 @section("content")
 <h1>Creacion de cursos</h1>
+<div class="contrainer">
+    <x-card/>
+</div>
 <a href="{{route('cursos.index')}}">cursos</a><br>
 
 <form action="{{route('cursos.store')}}" method="post">

@@ -24,3 +24,6 @@ Route::get('/cursos/{curso}', [CursosController::class,'show'])->name("cursos.sh
 Route::get('/cursos/{curso}/edit',[CursosController::class,"edit"])->name("cursos.edit");
 Route::put('/cursos/{curso}',[CursosController::class,"update"])->name("cursos.update");
 Route::delete('curso/{curso}',[CursosController::class,'destroy'] )->name('cursos.destroy');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
